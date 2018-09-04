@@ -84,6 +84,9 @@ namespace Microsoft.Pc
                                 case "p#":
                                     outputLanguage = CompilerOutput.PSharp;
                                     break;
+                                case "solidity":
+                                    outputLanguage = CompilerOutput.Solidity;
+                                    break;
                                 default:
                                     CommandlineOutput.WriteMessage($"Unrecognized generate option '{colonArg}', expecting C or P#", SeverityKind.Error);
                                     return Failure;
