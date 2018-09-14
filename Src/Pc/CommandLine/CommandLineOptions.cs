@@ -203,9 +203,10 @@ namespace Microsoft.Pc
             CommandlineOutput.WriteMessage("USAGE: Pc.exe file1.p [file2.p ...] [-t:tfile] [options]", SeverityKind.Info);
             CommandlineOutput.WriteMessage("    -t:tfile                   -- name of output file produced for this compilation unit; if not supplied then file1", SeverityKind.Info);
             CommandlineOutput.WriteMessage("    -outputDir:path            -- where to write the generated files", SeverityKind.Info);
-            CommandlineOutput.WriteMessage("    -generate:[C,P#]           -- select a target language to generate", SeverityKind.Info);
+            CommandlineOutput.WriteMessage("    -generate:[C,P#,Solidity]  -- select a target language to generate", SeverityKind.Info);
             CommandlineOutput.WriteMessage("        C   : generate C code using the Prt runtime", SeverityKind.Info);
             CommandlineOutput.WriteMessage("        P#  : generate C# code using the P# runtime", SeverityKind.Info);
+            CommandlineOutput.WriteMessage("  Solidity  : generate Solidity code", SeverityKind.Info);
             CommandlineOutput.WriteMessage("    -sourcemaps[:(true|false)] -- enable or disable generating source maps", SeverityKind.Info);
             CommandlineOutput.WriteMessage("                                  in the compiled output. may confuse some", SeverityKind.Info);
             CommandlineOutput.WriteMessage("                                  debuggers.", SeverityKind.Info);
